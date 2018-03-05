@@ -32,15 +32,49 @@ AWS makes a clear distinction between its responsibilities ("security _of_ the c
 
 Along similar lines, you should be mindful of which AWS services have been deemed HIPAA-eligible:
 
-* DynamoDB
-* Elastic Block Store (EBS)
-* Elastic Cloud Compute (EC2)
-* Elastic Load Balancing (ELB)
-* Elastic MapReduce (EMR)
-* Glacier
-* Redshift
-* Relational Database Service (RDS), MySQL and Oracle engines only
-* Simple Storage Service (S3)
+* Amazon API Gateway excluding the use of Amazon API Gateway caching
+* Amazon Aurora [MySQL, PostgreSQL]
+* AWS Batch
+* Amazon CloudFront [including Lambda@Edge]
+* AWS CloudHSM
+* Amazon CloudWatch Logs
+* Amazon Cognito
+* Amazon Connect
+* AWS Database Migration Service
+* AWS Direct Connect
+* AWS Directory Services excluding Simple AD and AD Connector
+* Amazon DynamoDB
+* Amazon EC2 Container Registry (ECR)
+* Amazon EC2 Container Service (ECS)
+* Amazon ElastiCache
+* Amazon Elastic Block Store (Amazon EBS)
+* Amazon Elastic Compute Cloud (Amazon EC2)
+* Elastic Load Balancing
+* Amazon Elastic MapReduce (Amazon EMR)
+* Amazon Glacier
+* Amazon Inspector
+* AWS Key Management Service
+* Amazon Kinesis Streams
+* AWS Lambda
+* Amazon Macie
+* AWS Managed Services
+* Amazon QuickSight
+* Amazon Redshift
+* Amazon Relational Database Service (Amazon RDS) [SQL Server, MySQL, Oracle, PostgreSQL, and MariaDB engines only]
+* Amazon Route 53
+* AWS Shield [Standard and Advanced]
+* Amazon Simple Notification Service (SNS)
+* Amazon Simple Queue Service (SQS)
+* Amazon Simple Storage Service (Amazon S3) [including S3 Transfer Acceleration]
+* AWS Snowball
+* AWS Snowball Edge
+* AWS Snowmobile
+* AWS Storage Gateway
+* AWS Systems Manager (previously Amazon EC2 Systems Manager) [excluding AWS Systems Manager Console and Resource Groups]
+* Amazon Virtual Private Cloud (VPC)
+* AWS Web Application Firewall (WAF)
+* Amazon WorkDocs
+* Amazon WorkSpaces
 
 While these are the only services which can process, store, and transmit PHI according to HIPAA regulations, other AWS services can still be used so long as they do not come in direct contact with PHI. For example, ECS can be used when all PHI is actually processed on EC2.
 
